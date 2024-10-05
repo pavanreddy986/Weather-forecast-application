@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css"> <!-- Here i linked Cascading Style Sheets -->
+</head>
+<body>
+
+  <!--Here i Added container  -->
+  <div class="container">
+    <h1>Weather Forecast Application</h1>
+    <h6>By Pavan</h6>
+
+    <!--Here i added the buttons and Input of the GET-WEATHER and USE-CURRENT-LOCATION -->
+    <div class="search-container">
+      <input type="text" id="cityInput" placeholder="Enter city name" required>
+      <button id="searchButton">Get Weather</button>
+      <button id="currentLocationButton">Use Current Location</button>
+    </div>
+
+    <!--Here it shows the recent searches of the page  -->
+    <div class="recent-searches">
+      <label for="recentSearchDropdown">Recent Searches:</label>
+      <select id="recentSearchDropdown">
+        <option value="" disabled selected>No recent searches</option>
+      </select>
+    </div>
+
+    <!--Here it will display code dynamically after clicking GET-WEATHER in container box-->
+    <div id="weatherDisplay" class="weather-display">
+      <h2 id="locationName"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+      <img id="weatherIcon" src="forecast.jpg" alt="Weather Icon">
+      <p id="description"></p>
+    </div>
+
+    <!-- -->
+    <div id="forecastDisplay" class="forecast-display">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastCards" class="forecast-cards">
+        <!-- Forecast cards will display dynamically by adding javaScript code -->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js">
+
+  </script> <!-- Here we need to attach javascript file -->
+
+</body>
+</html>

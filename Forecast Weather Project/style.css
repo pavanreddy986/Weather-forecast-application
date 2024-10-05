@@ -1,0 +1,167 @@
+/* Here i used Different Types Of Transitions and Transformations and Added Media query for different resolutions for Mobiles and Desktops  */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    background-color: #4d4d4d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(255, 121, 150);
+    transition: all 0.5s ease-in-out;
+    color: rgb(169, 169, 169);
+ }
+ .container:hover{
+  transform:scale(1.04);
+ }
+  
+  h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    transition:all 0.5s ease-in-out;
+    box-shadow: 10px 10px solid rgb(0, 0, 0);
+  }
+  h1:hover{
+    transform: scale(1.02);
+  }
+h6{
+  position: right;
+  bottom:5px;
+  right:5px;
+  opacity:0.5;
+  z-index:99;
+  color:white;
+}
+
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+   }
+  
+  .search-container{
+    transform: scale(1.02);
+  }
+  input[type="text"] {
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+    width: auto;
+    font-family: fantasy;
+    color: rgb(169, 169, 169);
+    background-color: #4d4d4d;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px rgb(255, 121, 150);
+  }
+  input:hover{
+    transform: scale(1.05);
+  }
+  button {
+    padding: 10px;
+    padding-right: 200px;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out;
+
+  }
+  button:hover{
+    transform: scale(1.05);
+  }
+  #searchButton{
+    box-shadow: 5px 5px 5px rgb(255, 121, 150);
+    width: auto;
+    background-color: #4d4d4d;
+    color: rgb(169, 169, 169);
+    font-family: fantasy;
+  }
+  #currentLocationButton{
+    box-shadow: 5px 5px 5px rgb(255, 121, 150);
+    width: auto;
+    background-color: #4d4d4d;
+    color: rgb(169, 169, 169);
+    font-family: fantasy;
+  }
+  .recent-searches {
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  .recent-searches:hover{
+    transform:scale(1.05)
+  }
+  .weather-display {
+    text-align: center;
+  }
+  
+  #weatherIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(255, 121, 150);
+    transition: all 0.5s ease-in-out;
+
+  }
+  #weatherIcon:hover{
+    transform:scale(1.05)
+  }
+  .forecast-display {
+    margin-top: 20px;
+  }
+  
+  .forecast-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast-day {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 18%;
+    text-align: center;
+  }
+  
+  .forecast-day img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 10px 10px 10px rgba(247, 224, 74, 0.948);
+  }
+div{
+  box-shadow: 10px 10px 10px solid black;
+}
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  
+    .forecast-cards {
+      flex-direction: column;
+    }
+  
+    .forecast-day {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  
